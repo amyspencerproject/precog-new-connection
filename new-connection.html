@@ -12,9 +12,6 @@
   </head>
   <body>
     <div class="Page">
-      <a class="Button button" href="new-connection.html"
-        ><i class="Icon fas fa-plus-square"></i>New Connection</a
-      >
       <div class="PipelineCreatePage">
         <div class="Container"><h1>Request New Data Connection</h1></div>
         <div class="Container">
@@ -27,75 +24,115 @@
             <div class="ConnectorForm">
               <div class="Instructions">
                 <p>
-                  Precog has over 2,000 API connectors but we not have creating
-                  all yet. Fill out this form with as much information as
-                  possible.
+                  Precog has built thousands of API connectors but we haven't 
+                  gotten to them all yet. If you havent found the connector you are looking for fill out this form
+                  so we can get started on building a new connector for you.
+                </p>
+                <p>The more information you give us the better!</p>
+                <p>
+                  Ideally customers need to get their credentials before filling out this 
+                  form. Explain to them what an application is, have them name the application 
+                  'precog'. Have them get credentials. Find the API documentation and following the steps 
+                  neccessary to access your API is a great first 
+                  step in getting your connector built.
                 </p>
                 <p>
-                  The more information you give us the better! Help us help you
-                  messaging.
+                  Having a firm understanding on what your usecase is for solving a businnes problem with your data 
+                  is fundemental. We need to understand what you are trying to accomplish to make sure that we use 
+                  our time efficeintly and give you the best outcome as quickly as possible.
                 </p>
               </div>
-              <h2>Precog configuration</h2>
+              <h2>New Connection Request</h2>
               <div class="KindForm">
                 <label class="Field"
-                  ><div class="Field-label">Product Name</div>
+                  ><div class="Field-label">Software Name</div>
                   <div class="Field-description">
                     <p>
-                      Include any prior product names if rebranding has occured
-                      e.g. UKG
+                      Tell us what software product you would like to request a connection to. Include any
+                      subscription levels, edition names, or rebranding names e.g. UKG was once
+                      branded as Kronos and Ultipro.
                     </p>
                   </div>
                   <input class="Input" type="text" placeholder="" /></label
                 ><label class="Field"
-                  ><div class="Field-label">Product login URL</div>
-                  <div class="Field-description">
-                    <p></p>
-                  </div>
-                  <input class="Input" type="text" placeholder="" /></label
-                ><label class="Field"
-                  ><div class="Field-label">Product marketing page for app</div>
-                  <div class="Field-description">
-                    <p>The main homepage of the product?</p>
-                  </div>
-                  <input class="Input" type="text" placeholder="" /></label
-                ><label class="Field"
-                  ><div class="Field-label">API Docs link (optional)</div>
-                  <div class="Field-description">
-                    <p>Just the link here</p>
-                  </div>
-                  <input class="Input" type="text" placeholder="" /></label
-                ><label class="Field"
-                  ><div class="Field-label">API doc upload (optional)</div>
-                  <div class="Field-description">
-                    <p>Uploads here with select file dialog</p>
-                  </div>
-                  <input class="Input" type="text" placeholder="" /></label
-                ><label class="Field"
-                  ><div class="Field-label">Application Client ID</div>
-                  <div class="Field-description">
-                    <p>Client ID</p>
-                  </div>
-                  <input class="Input" type="text" placeholder="" /></label
-                ><label class="Field"
-                  ><div class="Field-label">Client Secret</div>
-                  <div class="Field-description">
-                    <p>Secret</p>
-                  </div>
-                  <input class="Input" type="password" placeholder="" /></label
-                ><label class="Field"
-                  ><div class="Field-label">Token or Key</div>
-                  <div class="Field-description">
-                    <p>Token or key</p>
-                  </div>
-                  <input class="Input" type="text" placeholder="" /></label
-                ><label class="Field"
-                  ><div class="Field-label">Use case</div>
+                  ><div class="Field-label">Your login URL</div>
                   <div class="Field-description">
                     <p>
-                      Paragraphs with a lot of prompting and examples to
-                      motivate correct answer. Maybe include this up top before
-                      form as well. Say it nice and say it twice!
+                      Copy the url that you use to login. Having the exact login helps us 
+                      identify any hosting and geogrphical considertions for this connection.
+                    </p>
+                  </div>
+                  <input class="Input" type="text" placeholder="" /></label
+                ><label class="Field"
+                  ><div class="Field-label">Homepage URL</div>
+                  <div class="Field-description">
+                    <p>Copy the homepage of the software product you are requesting a connection for or to.</p>
+                  </div>
+                  <input class="Input" type="text" placeholder="" /></label
+                ><label class="Field"
+                  ><div class="Field-label">
+                    API Documentaion Link (optional)
+                  </div>
+                  <div class="Field-description">
+                    <p>
+                      Most sofware products will have API documention for
+                      developers and customers to learn the details of
+                      connecting to the product's API. If you have this url paste it below.
+                    </p>
+                  </div>
+                  <input class="Input" type="text" placeholder="" /></label
+                ><label class="Field"
+                  ><div class="Field-label">
+                    API Documentation Upload (optional)
+                  </div>
+                  <div class="Field-description">
+                    <p>
+                      Sometimes the API documentation will be provided to you as files and not availble online. In that case
+                      please upload those files here.
+                    </p>
+                  </div>
+                  <input class="Input" type="text" placeholder="" /></label
+                ><label class="Field"
+                  ><div class="Field-label">Credentials</div>
+                  <div class="Field-description">
+                    <p>In the space below please copy and paste your credentials 
+                      for access the application you are requesting a connection 
+                      for. Your answers will be blocked out after hitting the 
+                      return button.</p>
+                  </div>
+                  <textarea
+                    type="text"
+                    placeholder="this box will be free form text
+Client ID 292085223830.apps.bullhorn.com
+Client Secret GGCTtn9gVHW4li2ohitH8FvSyrGOCSPX-67
+after each return text input will be changed to ***************** "
+                    name=""
+                    id=""
+                    rows="5"
+                    style="width: 100%"
+                  ></textarea>
+                <label class="Field"
+                  ><div class="Field-label">Credential Files or Keys</div>
+                  <div class="Field-description">
+                    <p>If you have certificates, keys, or any other type of 
+                      credential files that are neccesary for connectin to 
+                      this product please upload those as well</p>
+                  </div>
+                  <label class="Upload"
+                    ><input type="file" class="Upload-file" />
+                    <div class="Button Upload-fileName">
+                      <span class="Upload-fileNameIcon"
+                        ><i class="Icon fas fa-upload"></i></span
+                      >Select file
+                    </div></label
+                  ><label class="Field"
+                  ><div class="Field-label">Use Case</div>
+                  <div class="Field-description">
+                    <p>
+                      Providing a use case to us is required for requesting a new 
+                      connector. Knowing what your end goal and what your data 
+                      needs are helps us to focus our efforts to build a new 
+                      connector efficiently.
                     </p>
                   </div>
                   <input class="Input" type="text" placeholder="" /></label
@@ -109,6 +146,20 @@
                   </div>
                   <input class="Input" type="text" placeholder=""
                 /></label>
+                <label class="Field"
+                  ><div class="Field-label">Datasets</div>
+                  <div class="Field-description">
+                    <p>Show us what object / dataset / table you want.</p>
+                  </div>
+                  <label class="Upload"
+                    ><input type="file" class="Upload-file" />
+                    <div class="Button Upload-fileName">
+                      <span class="Upload-fileNameIcon"
+                        ><i class="Icon fas fa-upload"></i></span
+                      >Select file
+                    </div></label
+                  ></label
+                >
               </div>
               <div class="Group">
                 <div class="ButtonGroup">
