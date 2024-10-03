@@ -13,45 +13,40 @@
   <body>
     <div class="Page">
       <div class="PipelineCreatePage">
-        <div class="Container"><h1>Create connector</h1></div>
+        <div class="Container"><h1>Create Connector</h1></div>
         <div class="Container">
           <div class="SourceAdd">
             <div class="Group">
               <a
                 class="Button button"
                 type="button"
-                href="request-wizard-4.html"
+                href="create-wizard-2.html"
               >
                 <i class="Icon fas fa-arrow-left"></i>Back
               </a>
             </div>
             <div class="ConnectorForm">
               <div class="Instructions">
-                <h2>API Documentation</h2>
+                <h2>{Salesforce} Product Information</h2>
               </div>
               <div class="KindForm">
                 <label class="Field"
-                  ><div class="Field-label">
-                    API Documentaion Link (Optional)
-                  </div>
+                  ><div class="Field-label">Homepage URL</div>
                   <div class="Field-description">
                     <p>
-                      Most {Salesforce} products will have API documention for
-                      developers and customers with the details of how to
-                      connect to the product's API. If you have this url paste
-                      it below.
+                      Enter the homepage URL for the {Salesforce} product you
+                      are using.
                     </p>
                   </div>
-                  <input class="Input" type="text" placeholder="" /></label
-                ><label class="Field"
-                  ><div class="Field-label">
-                    API Documentation Upload (Optional)
-                  </div>
+                  <input class="Input" type="text" placeholder=""
+                /></label>
+                <label class="Field"
+                  ><div class="Field-label">Your Login URL</div>
                   <div class="Field-description">
                     <p>
-                      Sometimes the API documentation will be provided to you as
-                      files and will not be availble online. In that case,
-                      please upload those files here.
+                      Enter the URL that you use to login to {Salesforce}.
+                      Having the exact login helps Precog identify any hosting
+                      and geographical considerations for this connector.
                     </p>
                   </div>
                   <input class="Input" type="text" placeholder=""
@@ -59,7 +54,7 @@
               </div>
               <div class="Group">
                 <div class="ButtonGroup">
-                  <a class="Button" type="button" href="request-wizard-6.html">
+                  <a class="Button" type="button" href="create-wizard-4.html">
                     <i class="Icon fas fa-chevron-right"></i>Continue
                   </a>
                 </div>

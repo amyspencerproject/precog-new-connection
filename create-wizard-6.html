@@ -13,35 +13,44 @@
   <body>
     <div class="Page">
       <div class="PipelineCreatePage">
-        <div class="Container"><h1>Create connector</h1></div>
+        <div class="Container"><h1>Create Connector</h1></div>
         <div class="Container">
           <div class="SourceAdd">
             <div class="Group">
               <a
                 class="Button button"
                 type="button"
-                href="request-wizard-5.html"
+                href="create-wizard-5.html"
               >
                 <i class="Icon fas fa-arrow-left"></i>Back
               </a>
             </div>
             <div class="ConnectorForm">
               <div class="Instructions">
-                <h2>Credentials</h2>
+                <h2>API Credentials</h2>
               </div>
               <div class="KindForm">
                <label class="Field"
                 ><div class="Field-label">Credentials</div>
                 <div class="Field-description">
                   <p>
-                    In the space below please enter your credentials 
-                    for accessing the API you are requesting a connection 
-                    for. Valid credentials differ from one API to the next. Check 
-                    the API documentation to find out what type of credentials are 
-                    required. You may need to request credentials to access 
-                    your API data. Credentials can include username and password, 
+                    In the space below enter your credentials for accessing 
+                    the API. Valid credentials differ from one API to the 
+                    next. Check the API documentation to find out what type 
+                    of credentials are required. You may need to request 
+                    credentials to access your API data. Often you will need 
+                    to create an application in the software. We advise that 
+                    you name any applications 'precog' so it will be clear 
+                    what the credentials are being used for in the future. 
+                    Remember Precog only needs read access to your API.  
+                  </p>
+                  <p>
+                    Credentials can include username and password, 
                     a client Id and secret or a token. For example, 
-                    <code>Client ID: 292085223830.apps.erp-software.com</code> and <code>Client Secret: GGCTtn9gVHW4li2ohitH8FvS-67</code> or <code>Username: admin@precog.com</code> and <code>Password: 123XYZ!</code>.
+                    <code>Client ID: 292085223830.apps.erp-software.com</code> 
+                    and <code>Client Secret: GGCTtn9gVHW4li2ohitH8FvS-67</code> 
+                    or <code>Username: admin@precog.com</code> and 
+                    <code>Password: 123XYZ!</code>.
                   </p>
                 </div>
                 <textarea
@@ -61,7 +70,6 @@ How long until we figure out that this is a Client Secret"
                       <input type="checkbox" class="Option-checkbox">
                       <div class="Option-label">
                         <div class="Option-labelTitle">Hide credentials</div>
-                        <div class="Option-labelDescription">For security click on the hide button after you have entered your credentials.</div>
                       </div>
                     </label>
                   </li>
@@ -84,8 +92,8 @@ How long until we figure out that this is a Client Secret"
               </div>
               <div class="Group">
                 <div class="ButtonGroup">
-                  <a class="Button" type="button" href="index.html">
-                    <i class="Icon fas fa-chevron-circle-right"></i>Submitt Request
+                  <a class="Button" type="button" href="submitted.html">
+                    <i class="Icon fas fa-chevron-circle-right"></i>Create
                   </a>
                 </div>
               </div>

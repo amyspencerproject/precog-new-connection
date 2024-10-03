@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Connection Mock-Up</title>
+    <link rel="stylesheet" type="text.css" href="./scss/_normalize.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./scss/fonts.css" />
+    <link rel="stylesheet" href="./scss/fontawesome-all.css" />
+    <link rel="stylesheet" href="./scss/google.css" />
+  </head>
+  <body>
+    <div class="Page">
+      <div class="PipelineCreatePage">
+        <div class="Container"><h1>Create connector</h1></div>
+        <div class="Container">
+          <div class="SourceAdd">
+            <div class="Group">
+              <a
+                class="Button button"
+                type="button"
+                href="create-wizard-4.html"
+              >
+                <i class="Icon fas fa-arrow-left"></i>Back
+              </a>
+            </div>
+            <div class="ConnectorForm">
+              <div class="Instructions">
+                <h2>API Documentation</h2>
+              </div>
+              <div class="KindForm">
+                <label class="Field"
+                  ><div class="Field-label">
+                    API Documentaion URL (Optional)
+                  </div>
+                  <div class="Field-description">
+                    <p>
+                      Most {Salesforce} software products will have API
+                      documention for developers and customers. The
+                      documentation will have the details of how to connect to
+                      the API. Enter the URL for the API documentation.
+                    </p>
+                  </div>
+                  <input class="Input" type="text" placeholder="" /></label
+                ><label class="Field"
+                  ><div class="Field-label">
+                    API Documentation Upload (Optional)
+                  </div>
+                  <div class="Field-description">
+                    <p>
+                      Sometimes the API documentation will be provided to you as
+                      files and will not be availble online. In that case,
+                      upload those files here.
+                    </p>
+                  </div>
+                  <label class="Upload"
+                  ><input type="file" class="Upload-file" />
+                    <div class="Button Upload-fileName">
+                      <span class="Upload-fileNameIcon"
+                        ><i class="Icon fas fa-upload"></i></span
+                      >Select file
+                    </div></label
+                  >
+              </div>
+              <div class="Group">
+                <div class="ButtonGroup">
+                  <a class="Button" type="button" href="create-wizard-6.html">
+                    <i class="Icon fas fa-chevron-right"></i>Continue
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
