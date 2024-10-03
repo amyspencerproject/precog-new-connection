@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Connection Mock-Up</title>
+    <link rel="stylesheet" type="text.css" href="./scss/_normalize.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./scss/fonts.css" />
+    <link rel="stylesheet" href="./scss/fontawesome-all.css" />
+    <link rel="stylesheet" href="./scss/google.css" />
+  </head>
+  <body>
+    <div class="Page">
+      <div class="PipelineCreatePage">
+        <div class="Container"><h1>Create connector</h1></div>
+        <div class="Container">
+          <div class="SourceAdd">
+            <div class="Group">
+              <a
+                class="Button button"
+                type="button"
+                href="request-wizard-5.html"
+              >
+                <i class="Icon fas fa-arrow-left"></i>Back
+              </a>
+            </div>
+            <div class="ConnectorForm">
+              <div class="Instructions">
+                <h2>Credentials</h2>
+              </div>
+              <div class="KindForm">
+               <label class="Field"
+                ><div class="Field-label">Credentials</div>
+                <div class="Field-description">
+                  <p>
+                    In the space below please enter your credentials 
+                    for accessing the API you are requesting a connection 
+                    for. Valid credentials differ from one API to the next. Check 
+                    the API documentation to find out what type of credentials are 
+                    required. You may need to request credentials to access 
+                    your API data. Credentials can include username and password, 
+                    a client Id and secret or a token. For example, 
+                    <code>Client ID: 292085223830.apps.erp-software.com</code> and <code>Client Secret: GGCTtn9gVHW4li2ohitH8FvS-67</code> or <code>Username: admin@precog.com</code> and <code>Password: 123XYZ!</code>.
+                  </p>
+                </div>
+                <textarea
+                  type="text"
+                  placeholder="this box will be free form text
+what if the enter GGCTtn9gVHW4li2ohitH8FvSyrGOCSPX-67 with no label?
+How long until we figure out that this is a Client Secret"
+                  name=""
+                  id=""
+                  rows="5"
+                  style="width: 100%"
+                ></textarea>
+
+                <ul class="Options">
+                  <li class="Options-item">
+                    <label class="Option">
+                      <input type="checkbox" class="Option-checkbox">
+                      <div class="Option-label">
+                        <div class="Option-labelTitle">Hide credentials</div>
+                        <div class="Option-labelDescription">For security click on the hide button after you have entered your credentials.</div>
+                      </div>
+                    </label>
+                  </li>
+                </ul>
+              <label class="Field"
+                ><div class="Field-label">Credential Files or Keys</div>
+                <div class="Field-description">
+                  <p>If you have certificates, keys, or any other type of 
+                    credential files that are neccesary for accessing the API 
+                    please upload those as well.</p>
+                </div>
+                <label class="Upload"
+                  ><input type="file" class="Upload-file" />
+                  <div class="Button Upload-fileName">
+                    <span class="Upload-fileNameIcon"
+                      ><i class="Icon fas fa-upload"></i></span
+                    >Select file
+                  </div></label
+                >
+              </div>
+              <div class="Group">
+                <div class="ButtonGroup">
+                  <a class="Button" type="button" href="index.html">
+                    <i class="Icon fas fa-plus"></i>Submitt Request
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

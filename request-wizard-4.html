@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Connection Mock-Up</title>
+    <link rel="stylesheet" type="text.css" href="./scss/_normalize.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./scss/fonts.css" />
+    <link rel="stylesheet" href="./scss/fontawesome-all.css" />
+    <link rel="stylesheet" href="./scss/google.css" />
+  </head>
+  <body>
+    <div class="Page">
+      <div class="PipelineCreatePage">
+        <div class="Container"><h1>Create connector</h1></div>
+        <div class="Container">
+          <div class="SourceAdd">
+            <div class="Group">
+              <a
+                class="Button button"
+                type="button"
+                href="request-wizard-3.html"
+              >
+                <i class="Icon fas fa-arrow-left"></i>Back
+              </a>
+            </div>
+            <div class="ConnectorForm">
+              <div class="Instructions">
+                <h2>Use case prompt</h2>
+              </div>
+              <div class="KindForm">
+                <label class="Field"
+                  ><div class="Field-label">Use Case</div>
+                  <div class="Field-description">
+                    <p>
+                      Having a firm understanding of your usecase for solving a
+                      business problem with your data is fundamental. We need to
+                      understand what you are trying to accomplish to ensure
+                      that we use our time efficiently and give you the best
+                      outcome as quickly as possible.
+                    </p>
+                    <p>
+                      Providing a use case to us is required for requesting a
+                      new connector. Knowing what your end goal and what your
+                      data needs are helps us to focus our efforts to build a
+                      new connector efficiently.
+                    </p>
+                    <p>
+                      An example usecase: (Maybe have expandable section of
+                      several examples not just one)
+                    </p>
+                  </div>
+                  <textarea
+                    class="Input"
+                    type="text"
+                    rows="10"
+                    cols="33"
+                    placeholder="Free type use case typed in here"
+                  ></textarea>
+                </label>
+                <label class="Field"
+                  ><div class="Field-label">Datasets</div>
+                  <div class="Field-description">
+                    <p>
+                      Which tables or datasets would you like to load with this
+                      connector?
+                    </p>
+                  </div>
+                  <input class="Input" type="text" placeholder=""
+                /></label>
+              </div>
+              <div class="Group">
+                <div class="ButtonGroup">
+                  <a class="Button" type="button" href="request-wizard-5.html">
+                    <i class="Icon fas fa-plus"></i>Continue
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
