@@ -13,7 +13,10 @@
   <body>
     <div class="Page">
       <div class="PipelineCreatePage">
-        <div class="Container"><h1>Create Connector</h1></div>
+        <div class="Container">
+          <h1>Create New Connector</h1>
+        </div>
+
         <div class="Container">
           <div class="SourceAdd">
             <div class="Group">
@@ -22,26 +25,29 @@
               </a>
             </div>
             <div class="ConnectorForm">
+              <h2>
+                Step 1 <progress class="progress" max="6" value="1"></progress>
+              </h2>
               <div class="Instructions"></div>
               <div class="KindForm">
                 <label class="Field"
-                  ><div class="Field-label" style="font-size: 2.5rem">
-                    Software Name
-                  </div>
+                  ><div class="Field-label">Software Name</div>
                   <div class="Field-description">
-                    <p style="font-size: 2rem">
+                    <p>
                       Which software product do you want to create a connector
                       for.
                     </p>
-                    <!-- <p>Include any subscription levels or edition names.</p> -->
                   </div>
                   <input class="Input" type="text" placeholder=""
                 /></label>
               </div>
               <div class="Group">
                 <div class="ButtonGroup">
-                  <a class="Button" type="button" href="create-wizard-2.html">
+                  <!-- <a class="Button" type="button" href="create-wizard-2.html">
                     <i class="Icon fas fa-arrow-right"></i>Get started
+                  </a> -->
+                  <a class="Button" type="button" href="create-wizard-2.html">
+                    <i class="Icon fas fa-arrow-right"></i>Next step
                   </a>
                 </div>
               </div>

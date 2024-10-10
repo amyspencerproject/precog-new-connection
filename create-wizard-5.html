@@ -13,7 +13,7 @@
   <body>
     <div class="Page">
       <div class="PipelineCreatePage">
-        <div class="Container"><h1>Create connector</h1></div>
+        <div class="Container"><h1>API Documentation</h1></div>
         <div class="Container">
           <div class="SourceAdd">
             <div class="Group">
@@ -27,20 +27,40 @@
             </div>
             <div class="ConnectorForm">
               <div class="Instructions">
-                <h2>API Documentation</h2>
+                <h2>Step 5 <progress class="progress" max="6" value="5"></progress></h2>
+                <div class="gcse-search"></div>
               </div>
               <div class="KindForm">
+                <p>
+                    Most software products will have API documention or deveoper documentation for customers 
+                    and developers. The documentation will have the details of how to 
+                    connect to the API. Often you can find your {Salesforce} API documentation 
+                    by searching in the help section of {Salesforce} or search the internet using the 
+                    search term <code>{Salesforce} api documentation</code>. If the {Salesforce} API 
+                    documentation is not publicly accessible then provide a pdf or openapi / 
+                    swagger document of the api documentation.
+                    
+                    look in the help section and share this with precog either by exporting 
+                    it as a pdf and uploading or if it is publicly accessible then provide the url.
+                  </p>
+                  <!-- <p>Put a google search bar with a prompt <code>product name api documentation</code>
+                    <img src="img/search-bar-example.png" alt=""></p> -->
+                    <p>Sometimes the API documentation will be provided to you as
+                      files and will not be availble online. If the API documentation is not publicly accessible them provide a pdf or openapi / 
+                      swagger document of the api documentation. In that case,
+                      upload those files here.</p>
+                    <p></p>
                 <label class="Field"
-                  ><div class="Field-label">
+                  >
+                  <div class="Field-label">
                     API Documentaion URL (Optional)
                   </div>
                   <div class="Field-description">
                     <p>
-                      Most {Salesforce} software products will have API
-                      documention for developers and customers. The
-                      documentation will have the details of how to connect to
-                      the API. Enter the URL for the API documentation.
+                      Enter the URL for the API documentation.
                     </p>
+                    <p></p>
+                    
                   </div>
                   <input class="Input" type="text" placeholder="" /></label
                 ><label class="Field"
@@ -49,10 +69,10 @@
                   </div>
                   <div class="Field-description">
                     <p>
-                      Sometimes the API documentation will be provided to you as
-                      files and will not be availble online. In that case,
-                      upload those files here.
+                      Upload API documentation if it is provided to you as
+                      files.
                     </p>
+                    
                   </div>
                   <label class="Upload"
                   ><input type="file" class="Upload-file" />
@@ -66,7 +86,7 @@
               <div class="Group">
                 <div class="ButtonGroup">
                   <a class="Button" type="button" href="create-wizard-6.html">
-                    <i class="Icon fas fa-chevron-right"></i>Continue
+                    <i class="Icon fas fa-arrow-right"></i>Next step
                   </a>
                 </div>
               </div>

@@ -13,7 +13,7 @@
   <body>
     <div class="Page">
       <div class="PipelineCreatePage">
-        <div class="Container"><h1>Create connector</h1></div>
+        <div class="Container"><h1>Use Case Prompt</h1></div>
         <div class="Container">
           <div class="SourceAdd">
             <div class="Group">
@@ -27,28 +27,67 @@
             </div>
             <div class="ConnectorForm">
               <div class="Instructions">
-                <h2>Use Case Prompt</h2>
+                <h2>
+                  Step 4
+                  <progress class="progress" max="6" value="4"></progress>
+                </h2>
               </div>
+              <p>
+                Having a firm understanding of the use case for your data is
+                fundamental. Precog needs an example use case (use case prompt)
+                for solving a business problem in order to create the connector.
+              </p>
+              <p>
+                The connector will not be limited by your use case. You can
+                provide additional uses cases in the future.
+              </p>
+              <p>Example use case prompts:</p>
+              <ul>
+                <li>
+                  <p>
+                    Our mareketing team needs to view lifetime product value by
+                    region and ecommerce platform.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    I need to increase the rention rate of my placed candidates.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    We want to rank our staff by how quickly and accurately they
+                    process purchase orders and requisitions.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    I want to analyze spending patterns throughout my
+                    organization. I want to monitor off-contract and on-contract
+                    spend by department and time.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    I need to reconcile damaged products and returns with my
+                    inventory.
+                  </p>
+                </li>
+              </ul>
               <div class="KindForm">
                 <label class="Field"
-                  ><div class="Field-label">Use Case</div>
+                  ><div class="Field-label">Use Case Prompt</div>
                   <div class="Field-description">
-                    <p>
-                      Having a firm understanding of your use case for solving a
-                      business problem with your data is fundamental. We need to
-                      understand what you are trying to accomplish to ensure
-                      that we use our time efficiently and give you the best
-                      outcome as quickly as possible.
-                    </p>
-                    <p>
+                    <!-- <p>
                       Providing a use case prompt is required for creating a new
                       connector. Knowing your end goal and what your data needs
                       are helps Precog to focus efforts when building a new
                       connector.
-                    </p>
+                    </p> -->
+
                     <p>
-                      Example use case prompts: (Maybe have expandable section
-                      of several examples not just one)
+                      Providing a use case prompt is required for creating a new
+                      connector.
                     </p>
                   </div>
                   <textarea
@@ -57,11 +96,7 @@
                     rows="100"
                     cols="33"
                     style="height: 10rem"
-                    placeholder="Free type use case in here
-Can we make this area larger?
-This will encourage user to type a good use case and let them see as they are typing.
-Adding more rows to the html textarea is not making this area larger
-so I forced the height to be 10rem in styles"
+                    placeholder="Free type use case in here"
                   ></textarea>
                 </label>
                 <label class="Field"
@@ -72,13 +107,20 @@ so I forced the height to be 10rem in styles"
                       this connector?
                     </p>
                   </div>
-                  <input class="Input" type="text" placeholder=""
-                /></label>
+                  <textarea
+                    class="Input"
+                    type="text"
+                    rows="100"
+                    cols="33"
+                    style="height: 10rem"
+                    placeholder="Free type tables and datasets in here"
+                  ></textarea>
+                </label>
               </div>
               <div class="Group">
                 <div class="ButtonGroup">
                   <a class="Button" type="button" href="create-wizard-5.html">
-                    <i class="Icon fas fa-chevron-right"></i>Continue
+                    <i class="Icon fas fa-arrow-right"></i>Next step
                   </a>
                 </div>
               </div>

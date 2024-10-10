@@ -13,7 +13,7 @@
   <body>
     <div class="Page">
       <div class="PipelineCreatePage">
-        <div class="Container"><h1>Create Connector</h1></div>
+        <div class="Container"><h1>{Salesforce} Product Information</h1></div>
         <div class="Container">
           <div class="SourceAdd">
             <div class="Group">
@@ -26,8 +26,12 @@
               </a>
             </div>
             <div class="ConnectorForm">
+              <!-- <progress class="progress" max="6" value="2"></progress> -->
               <div class="Instructions">
-                <h2>{Salesforce} Product Information</h2>
+                <h2>
+                  Step 3
+                  <progress class="progress" max="6" value="3"></progress>
+                </h2>
               </div>
               <div class="KindForm">
                 <label class="Field"
@@ -35,7 +39,10 @@
                   <div class="Field-description">
                     <p>
                       Enter the homepage URL for the {Salesforce} product you
-                      are using.
+                      are using. For example,
+                      <code>https://www.precog.com/</code> would be the homepage
+                      url and not <code>precog.cloud</code> which is the app
+                      URL.
                     </p>
                   </div>
                   <input class="Input" type="text" placeholder=""
@@ -44,7 +51,7 @@
                   ><div class="Field-label">Your Login URL</div>
                   <div class="Field-description">
                     <p>
-                      Enter the URL that you use to login to {Salesforce}.
+                      Enter the URL that you use to log into {Salesforce}.
                       Having the exact login helps Precog identify any hosting
                       and geographical considerations for this connector.
                     </p>
@@ -55,7 +62,7 @@
               <div class="Group">
                 <div class="ButtonGroup">
                   <a class="Button" type="button" href="create-wizard-4.html">
-                    <i class="Icon fas fa-chevron-right"></i>Continue
+                    <i class="Icon fas fa-arrow-right"></i>Next step
                   </a>
                 </div>
               </div>

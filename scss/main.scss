@@ -1,7 +1,7 @@
-@import 'normalize';
-@import 'fonts';
-@import 'fontawesome-all';
-@import 'google';
+@import "normalize";
+@import "fonts";
+@import "fontawesome-all";
+@import "google";
 
 @mixin plain-list {
   margin: 0;
@@ -56,13 +56,14 @@ html {
   height: 100vh;
 }
 
-html, body {
+html,
+body {
   margin: 0;
 }
 
 body {
   background: #f7f7f7;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 100%;
   color: #383838;
   font-size: 1.6rem;
@@ -134,7 +135,8 @@ a {
     cursor: default;
   }
 
-  &:not(:disabled):hover, &:not(:disabled):focus {
+  &:not(:disabled):hover,
+  &:not(:disabled):focus {
     border-color: rgba(#5a43c9, 0.5);
     color: #5a43c9;
   }
@@ -150,13 +152,14 @@ a {
   border-color: transparent;
   color: #fff;
 
-  &:not(:disabled):hover, &:not(:disabled):focus {
-    background: #3E3C41;
+  &:not(:disabled):hover,
+  &:not(:disabled):focus {
+    background: #3e3c41;
     border-color: transparent;
   }
 
   &:not(:disabled):active {
-    background: #2A282C;
+    background: #2a282c;
     color: #fff;
   }
 }
@@ -223,7 +226,7 @@ a {
   pointer-events: none;
 }
 
-.Select+.Select {
+.Select + .Select {
   margin-left: 0.5em;
 }
 
@@ -232,7 +235,7 @@ a {
   @include vertical-group;
 }
 
-.Options-item+.Options-item {
+.Options-item + .Options-item {
   margin-top: 1.6rem;
 }
 
@@ -267,7 +270,7 @@ a {
 
 .ButtonGroup {
   @include plain-list;
-  .Button+.Button {
+  .Button + .Button {
     margin-left: 0.5rem;
   }
 }
@@ -276,7 +279,7 @@ a {
   @include plain-list;
   @include vertical-element;
 
-  .Box+.Box {
+  .Box + .Box {
     margin-top: 1rem;
   }
 }
@@ -399,8 +402,6 @@ a {
   margin-bottom: 0.5rem;
 }
 
-
-
 .Group {
   @include vertical-group;
 }
@@ -490,7 +491,7 @@ a {
   @include plain-list;
   margin-top: 2rem;
 
-  li+li {
+  li + li {
     margin-top: 1rem;
   }
 }
@@ -527,10 +528,10 @@ a {
   overflow: auto;
   margin: 1.6rem 0;
 
-  >p:first-child {
+  > p:first-child {
     margin-top: 0;
   }
-  >p:last-child {
+  > p:last-child {
     margin-bottom: 0;
   }
 }
@@ -602,7 +603,7 @@ a {
   margin: 0 1rem;
 }
 
-p+.ScheduleEntryEdit-words {
+p + .ScheduleEntryEdit-words {
   margin-left: 0;
 }
 
@@ -610,7 +611,7 @@ p+.ScheduleEntryEdit-words {
   display: none;
 }
 
-.DestinationCreate-scope+.DestinationCreate-scope {
+.DestinationCreate-scope + .DestinationCreate-scope {
   margin-left: 0.25em;
 }
 
@@ -696,7 +697,7 @@ p+.ScheduleEntryEdit-words {
 .InstructionList-item {
   padding-left: 3.4rem;
 
-  &+.InstructionList-item {
+  & + .InstructionList-item {
     margin-top: 1.2rem;
   }
 }
