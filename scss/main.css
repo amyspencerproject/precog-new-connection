@@ -4733,6 +4733,9 @@ template {
   background-color: #303030;
   opacity: 8%;
 }
+/* {
+  border: solid 1px red;
+} */
 
 html {
   font-size: 62.5%;
@@ -4768,6 +4771,7 @@ p {
   justify-content: flex-start; */
 }
 
+/* Progress bar */
 progress[value] {
   /* Reset the default appearance */
   -webkit-appearance: none;
@@ -4804,7 +4808,6 @@ progress[value]::-webkit-progress-value {
     -webkit-linear-gradient(left, #5b43c9, #9f69d8);
 
   border-radius: 4px;
-  /* not sure if background-size is necessary */
   background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
@@ -4822,6 +4825,101 @@ progress[value]::-moz-progress-bar {
   background-color: #bdbfc0;
   border-radius: 4px;
   background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+/*  Step Progress Bar   */
+
+.step-container {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.step-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.step-item .step-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #bdbfc0;
+  margin-bottom: 6px;
+}
+
+.step-item.active {
+  font-weight: bold;
+}
+
+.step-counter.completed {
+  color: white;
+}
+
+.step-item.completed .step-counter {
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(250, 250, 250, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    -webkit-linear-gradient(left, #5b43c9, #9f69d8);
+}
+
+.step-item.completed::after {
+  position: absolute;
+  content: "";
+  border-bottom: 1rem solid rgba(250, 250, 250, 0.25);
+  /* linear-gradient(left, #5b43c9, #9f69d8) */
+  /* background-image: -webkit-linear-gradient(
+      top,
+      rgba(250, 250, 250, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    -webkit-linear-gradient(left, #5b43c9, #9f69d8); */
+  width: 100%;
+  top: 15px;
+  left: 50%;
+  z-index: 3;
+}
+
+.step-item::before {
+  position: absolute;
+  content: "";
+  border-bottom: 1rem solid #bdbfc0;
+  width: 100%;
+  top: 15px;
+  left: -50%;
+  z-index: 2;
+}
+
+.step-item::after {
+  position: absolute;
+  content: "";
+  border-bottom: 1rem solid #bdbfc0;
+  width: 100%;
+  top: 15px;
+  left: 50%;
+  z-index: 2;
+}
+
+.step-item:first-child::before {
+  content: none;
+}
+.step-item:last-child::after {
+  content: none;
 }
 
 /* End of Amy Styles for Customer Visibility Mockup *********/
