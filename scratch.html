@@ -24,3 +24,96 @@
     <div class="step-name">Credentials</div>
   </div>
 </div>
+
+<style>
+  /* circle no gradient */
+  .step-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #bdbfc0;
+    margin-bottom: 6px;
+  }
+
+  /* circle with gradient */
+  .step-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: -webkit-linear-gradient(
+      rgba(250, 250, 250, 0.25),
+      rgba(0, 0, 0, 0.25)
+    );
+    margin-bottom: 6px;
+  }
+  .step-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 1rem solid #bdbfc0;
+    width: 100%;
+    top: 15px;
+    left: -50%;
+    z-index: 2;
+  }
+
+  .step-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 1rem solid #bdbfc0;
+    width: 100%;
+    top: 15px;
+    left: 50%;
+    z-index: 2;
+  }
+  /* wrapper gradient styles */
+  .wrapper {
+    box-sizing: border-box;
+    margin: 1rem auto 2rem;
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 25rem;
+    background: linear-gradient(to bottom, #5b43c9, #9f69d8);
+    border-bottom: 1rem solid transparent;
+    background-repeat: no-repeat;
+    background-origin: padding-box, border-box;
+  }
+
+  .og-wrapper {
+    box-sizing: border-box;
+    margin: 1rem auto 2rem;
+    padding: 1rem;
+    width: 80%;
+    max-width: 25rem;
+    background: linear-gradient(#222, #222),
+      linear-gradient(to right, red, purple);
+    border-bottom: 5px solid transparent;
+    background-repeat: no-repeat;
+    background-origin: padding-box, border-box;
+  }
+
+  .grey-wrapper {
+    box-sizing: border-box;
+    margin: 1rem auto 2rem;
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 25rem;
+    background-image: -webkit-linear-gradient(
+      top,
+      rgba(250, 250, 250, 0.25),
+      rgba(0, 0, 0, 0.25)
+    );
+    border-bottom: 1px solid transparent;
+    background-repeat: no-repeat;
+    background-origin: padding-box, border-box;
+  }
+</style>
