@@ -25,31 +25,46 @@
                 <i class="Icon fas fa-arrow-left"></i>Back
               </a>
             </div>
-            <div class="ConnectorForm">
-              <div class="Instructions">
-                <h2>Step 5 <progress class="progress" max="6" value="5"></progress></h2>
-                <div class="gcse-search"></div>
+            <h2>Step 5</h2>
+              <div class="step-container">
+                <div class="step-item completed">
+                  <div class="step-counter completed">1</div>
+                  <div class="step-name completed">Create</div>
+                </div>
+                <div class="step-item completed">
+                  <div class="step-counter completed">2</div>
+                  <div class="step-name completed">Get Started</div>
+                </div>
+                <div class="step-item completed">
+                  <div class="step-counter completed">3</div>
+                  <div class="step-name completed">Product Info</div>
+                </div>
+                <div class="step-item completed">
+                  <div class="step-counter completed">4</div>
+                  <div class="step-name completed">Use Case</div>
+                </div>
+                <div class="step-item active">
+                  <div class="step-counter active">5</div>
+                  <div class="step-name active">Documentation</div>
+                </div>
+                <div class="step-item">
+                  <div class="step-counter">6</div>
+                  <div class="step-name">Credentials</div>
+                </div>
               </div>
+            <div class="ConnectorForm">
               <div class="KindForm">
                 <p>
-                    Most software products will have API documentation or developer documentation for customers 
-                    and developers. The documentation will have the details of how to 
-                    connect to the API. Often you can find your {Salesforce} API documentation 
-                    by searching in the help section of {Salesforce} or search the internet using the 
-                    search term <code>{Salesforce} api documentation</code>. If the {Salesforce} API 
-                    documentation is not publicly accessible then provide a pdf or openapi / 
-                    swagger document of the api documentation.
-                    
-                    look in the help section and share this with precog either by exporting 
-                    it as a pdf and uploading or if it is publicly accessible then provide the url.
-                  </p>
-                  <!-- <p>Put a google search bar with a prompt <code>product name api documentation</code>
-                    <img src="img/search-bar-example.png" alt=""></p> -->
-                    <p>Sometimes the API documentation will be provided to you as
-                      files and will not be available online. If the API documentation is not publicly accessible then provide a pdf or openapi / 
-                      swagger document of the api documentation. In that case,
-                      upload those files here.</p>
-                    <p></p>
+                  Software products will have API documentation or developer 
+                  documentation containing the details of how to connect to 
+                  the API. You can often find your {Salesforce} API documentation 
+                  by searching in the help section of {Salesforce} or search the 
+                  internet using the search term <code>{Salesforce} api documentation</code>. If 
+                  the {Salesforce} API documentation is not publicly accessible then 
+                  export and upload the documentation as a pdf, OpenAI, or Swagger 
+                  document (JSON or YAML).
+
+                </p>
                 <label class="Field"
                   >
                   <div class="Field-label">
@@ -58,9 +73,7 @@
                   <div class="Field-description">
                     <p>
                       Enter the URL for the API documentation.
-                    </p>
-                    <p></p>
-                    
+                    </p>                    
                   </div>
                   <input class="Input" type="text" placeholder="" /></label
                 ><label class="Field"
@@ -69,8 +82,8 @@
                   </div>
                   <div class="Field-description">
                     <p>
-                      Upload API documentation if it is provided to you as
-                      files.
+                      Upload API documentation if it is provided to you 
+                      as files or is not publicly available.
                     </p>
                     
                   </div>
